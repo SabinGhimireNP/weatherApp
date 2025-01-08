@@ -1,6 +1,9 @@
 body {
   /* background: rgb(4, 249, 241); */
-
+ background-image: url("bgimage.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   align-items: center;
