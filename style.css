@@ -1,9 +1,5 @@
 body {
-  /* background: rgb(4, 249, 241); */
- background-image: url("four-seasons-weather-pqyu7m4fhm7pu94o.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+  background: rgb(4, 249, 241);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   align-items: center;
