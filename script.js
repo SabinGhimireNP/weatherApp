@@ -5,6 +5,9 @@ const api = "7a3ffbf448ad87f45f949a7efe9e44dc";
 
 var1.addEventListener("click", async function () {
   let city = var2.value;
+  if (city === "") {
+    alert("Please Enter a city name");
+  }
   const weatherinfo = await getweatherinfo(city);
   const data = weatherinfo.main.temp + "°C";
   temp.innerHTML = data;
@@ -15,5 +18,8 @@ async function getweatherinfo(city) {
 
   const response = await fetch(url);
   const data = await response.json();
+  if (data.cod == "404") {
+    alert("City not found");
+  }
   return data;
 }
